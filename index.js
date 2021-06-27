@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
- 	let lastScrollTop = 0;
-		$('#scroll-container').scroll(function(event){
-			setTimeout(function(){ 
-		  let st = $('#scroll-container').scrollTop();
-		  if (st > lastScrollTop){
+ 	let last_scroll_top = 0;
+	$('#scroll-container').scroll(function(event){
+		setTimeout(function(){ 
+		  let scoll_top = $('#scroll-container').scrollTop();
+		  if (scoll_top > last_scroll_top){
 		  	console.log("Im going down");
 		  } else {
 		  	console.log("I going UP!");
 		  }
-		  console.log(lastScrollTop);
-		  lastScrollTop = st;
+		  console.log(last_scroll_top);
+		  last_scroll_top = scoll_top;
 		}, 500);
 	});
 	document.querySelector('#close-hidden-navbar').addEventListener('click', function() {
