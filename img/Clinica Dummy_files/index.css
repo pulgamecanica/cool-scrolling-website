@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+	color: #373746;
+	padding: 0;
+	margin: 0;
+}
+html {height: 100%;}
+body {height: 100vh; overflow: hidden;}
+section:first-child {background-color: #1EBEBE;transition: all 1s linear;}
+section:nth-child(2n) {background-color: #DCE6FA;}
+section:nth-child(3n){background-color: #4E598C;}
+#scroll-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.text-center {text-align: center;}
+.text-light {color: #DCE6FA;}
+.text-dark {color: #373746;}
+.header-1 {font-size: 500%;}
+.header-2 {font-size: 400%;}
+.header-3 {font-size: 300%;}
+.header-4 {font-size: 200%;}
+.container {
+	scroll-snap-align: center;
+	position: relative;
+	height: 100vh;
+}
+.section-content {
+	position: relative;
+	margin-left: 50px;
+	overflow: hidden;
+	height: 100%;
+}
+.navbar {
+	display: inline;
+	height: 100%;
+}
+.site-lan {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	cursor: pointer;
+}
+#close-hidden-navbar {
+	display: none;
+}
+#open-hidden-navbar, #close-hidden-navbar {
+	background-color: transparent;
+	position: absolute;
+	font-size: 200%;
+	cursor: pointer;
+	border: none;
+	height: 100%;
+	left: 10px;
+}
+#hidden-navbar {display: none;}
+#home-section {padding: 2rem 2rem 2rem 0;}
+#home-content {
+	border-left: 2px solid #DCE6FA;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+#logoligth-img, #logodark-img  {
+	position: absolute;
+	width: 200px;
+	left: 5%;
+	top: 5%;
+}
+#hidden-navbar-content {
+	justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
